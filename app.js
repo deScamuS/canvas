@@ -70,6 +70,37 @@ window.onload = () => {
   };
   //animation loop every 33ms
   setInterval(draw, 33);
-  //let go for the demo
 };
 
+/*****************************************************/
+
+// Search Google Books API Logic & Render:
+function findBook() {
+  let search = document.getElementById("search").value;
+  document.getElementById("results").innerHTML = "";
+  console.log(search);
+  let URL = "https://www.googleapis.com/books/v1/volumes?q=" + search;
+  /*$.ajax({                                  ?date=${date}&api_key=
+    url: "https://www.googleapis.com/books/v1/volumes?q=" + search,
+    dataType: "json",
+    success: function(data) {
+      for (i = 0; i < data.items.length; i++) {
+        results.innerHTML +=
+          "<li>" + data.items[i].volumeInfo.description + "</li>";
+      }
+    },
+    type: "GET"
+  });*/
+  fetch("https://www.googleapis.com/books/v1/volumes?q=" + search)
+    .then(res => res.json())
+    .then(data => {
+      for (i = 0; i < data.items.length; i++) {
+        results.innerHTML +=
+          "<h6>" + data.items[i].volumeInfo.description + "</h6>";
+      }
+
+      console.log({ data });
+    });
+}
+
+document.getElementById("button").addEventListener("click", findBook, false);

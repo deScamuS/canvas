@@ -1,28 +1,26 @@
-body {
-  background: #6b92b9;
+canvas {
   display: block;
-  text-align: center;
-  box-sizing: border-box;
+}
+body {
+  display: block;
+  background: #6b92b9;
+
   padding: 0;
-  position: fixed;
-  margin: 0 0 40px 0;
+  margin: 0;
 }
 
 .container {
-  display: block;
-
-  justify-content: center;
-  right: 10%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   position: relative;
+  top: 200px;
 }
 h2 {
-  top: 40%;
-  left: 54%;
   font-family: roboto-regular, arial, sans-serif;
   font-size: 50px;
-  position: absolute;
 }
 span1 {
   color: rgb(66, 133, 244);
@@ -42,46 +40,24 @@ span6 {
 span7 {
   color: rgb(219, 68, 55);
 }
-form {
-  min-width: 428px;
-  max-width: 584px;
-  height: 110px;
-  margin: 28px auto 0 auto;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
 
 input {
   width: 250px;
-  justify-content: center;
-  top: 52%;
-  left: 50%;
-  position: absolute;
+
   border: 0px;
   border-radius: 20px;
 }
+button {
+  display: relative;
+  background-color: #4285f4;
+}
 
 p {
-  position: relative;
-  display: flex;
-  top: 48%;
-  left: 67%;
   font-family: arial, sans-serif;
   font-size: 14px;
-  position: absolute;
   color: rgb(219, 68, 55);
 }
 
-button {
-  border: 1px solid #4285f4;
-  top: 54%;
-  right: 7px;
-  position: absolute;
-}
-
-canvas {
-  display: block;
+ul{
+  list-style-type: none; 
 }
