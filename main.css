@@ -1,14 +1,87 @@
 body {
   background: #6b92b9;
-  display: flex;
-  text-align: center; 
-  align-items: center; 
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  position: fixed;
+  margin: 0 0 40px 0;
+}
+
+.container {
+  display: block;
+
   justify-content: center;
-  
-  font-family: "Alcubierre", sans serif;
+  right: 10%;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+h2 {
+  top: 40%;
+  left: 54%;
+  font-family: roboto-regular, arial, sans-serif;
+  font-size: 50px;
+  position: absolute;
+}
+span1 {
+  color: rgb(66, 133, 244);
+}
+span2 {
+  color: rgb(219, 68, 55);
+}
+span4 {
+  color: rgb(244, 180, 0);
+}
+span5 {
+  color: rgb(66, 133, 244);
+}
+span6 {
+  color: rgb(15, 157, 88);
+}
+span7 {
+  color: rgb(219, 68, 55);
+}
+form {
+  min-width: 428px;
+  max-width: 584px;
+  height: 110px;
+  margin: 28px auto 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+input {
+  width: 250px;
+  justify-content: center;
+  top: 52%;
+  left: 50%;
+  position: absolute;
+  border: 0px;
+  border-radius: 20px;
+}
+
+p {
+  position: relative;
+  display: flex;
+  top: 48%;
+  left: 67%;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  color: rgb(219, 68, 55);
+}
+
+button {
+  border: 1px solid #4285f4;
+  top: 54%;
+  right: 7px;
+  position: absolute;
 }
 
 canvas {
   display: block;
 }
-

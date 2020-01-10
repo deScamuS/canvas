@@ -11,18 +11,51 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
 
     <link rel="stylesheet" href="main.css" />
 
     <title>CANVAS</title>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </head>
   <body>
-    <div class='container'>
-      <div class="clock-input">
-        
-      </div>
-        <canvas id="canvas"></canvas>
-      </div>
+    <div class="container">
+      <form
+        action="/search"
+        method="GET"
+        name="search"
+        id="search-form"
+        class="search"
+      >
+        <div id="sb-wrapper" class="search">
+          <h2>
+            <span1>B</span1><span2>o</span2><span4>o</span4><span5>g</span5
+            ><span6>l</span6><span7>e</span7>
+          </h2>
+          <p>Books</p>
+
+          <input
+            type="submit"
+            form="search-form"
+            id="google-search"
+            value="Search Books"
+            name="google_search"
+            class="search"
+          />
+        </div>
+
+        <!-- #sb-wrapper -->
+      </form>
+      <!-- #search-form -->
+      <canvas id="canvas"></canvas>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
