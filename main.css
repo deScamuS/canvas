@@ -4,6 +4,7 @@ canvas {
 body {
   display: block;
   background: #6b92b9;
+ 
 
   padding: 0;
   margin: 0;
@@ -49,7 +50,12 @@ input {
 }
 button {
   display: relative;
-  background-color: #4285f4;
+  color: rgb(66, 133, 244);
+  border: 1; 
+  border-color:rgb(15, 157, 88); 
+
+
+  background-color: rgb(219, 68, 55);
 }
 
 p {
